@@ -79,8 +79,8 @@
 					<!-- Featured Post -->
 						<article class="post featured">
 							<header class="major">
-								<span class="date">Abril 30, 2017</span>
-								<h2><a href="https://html5up.net/massively"><!--[-->Conoce<!--]--><br />
+								<span class="date">Mayo 06, 2017</span>
+								<h2><a href="https://html5up.net/massively" target="_blank"><!--[-->Conoce<!--]--><br />
 								<!--[-->Massively<!--]--><i class="icon fa-external-link"></i></a></h2>
 								<p>
 									Massively es plantilla que <a href="https://aj.lkn.io/">AJ</a> de HTML5 UP pone a nuestra disposición y que,<br>al igual que todas las demás (como podrán notar si revisan todas sus plantillas en su <a href="https://html5up.net/">sitio oficial</a>),<br>ofrece por completo las características que las hacen imperdibles a todas. Ah, y son gratuitas 😄.
@@ -88,7 +88,7 @@
 							</header>
 							<a href="#!" class="image main"><img src="images/pic10.jpg" alt="HTML5UP homepage"></a>
 							<ul class="actions">
-								<li><a href="massively.html" class="button big">Leer Completo</a></li>
+								<li><a href="posts/massively.html" class="button big">Leer Completo</a></li>
 							</ul>
 						</article>
 					<!-- Fin Featured Post -->
@@ -97,14 +97,14 @@
 						<section class="posts">
 							<article>
 								<header>
-									<span class="date">April 24, 2017</span>
-									<h2><a href="#">Sed magna<br />
-									ipsum faucibus</a></h2>
+									<span class="date">Mayo 21, 2017</span>
+									<h2><a href="posts/highlight-and-share.html">Highlighter<br />
+									basado en la herramienta de Medium</a></h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/pic02.jpg" alt="CAMBIAR"></a>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+								<a href="#" class="image fit"><img src="images/pic11.jpg" alt="CAMBIAR"></a>
+								<p>Después de usar el famoso sitio para publicar artículos&#8202;—&#8202;y su herramienta para seleccionar y compartir&#8202;—&#8202;es inevitable sentir la imperiosa necesidad de usarlo en todos los sitios. Aquí hay algunas opciones.</p>
 								<ul class="actions">
-									<li><a href="#" class="button">Full Story</a></li>
+									<li><a href="posts/highlight-and-share.html" class="button">Leer Completo</a></li>
 								</ul>
 							</article>
 							<article>
@@ -206,7 +206,8 @@
 								<textarea name="message" id="message" rows="3"></textarea>
 							</div>
 							<ul class="actions">
-								<li><input type="submit" value="Send Message" /></li>
+								<!-- <li><input type="submit" value="Send Message" /></li> -->
+                <li><span class="button disabled">Enviar</span></li>
 							</ul>
 						</form>
 					</section>
@@ -254,9 +255,19 @@
 		<script src="assets/js/skel.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		<script type="text/javascript">
-			twemoji.parse(document.body);
-		</script>
+    <script type="text/javascript">
+      twemoji.parse(document.body, {
+          callback: function(icon, options, variant) {
+              switch ( icon ) {
+                  case 'a9':      // © copyright
+                  case 'ae':      // ® registered trademark
+                  case '2122':    // ™ trademark
+                      return false;
+              }
+              return ''.concat(options.base, options.size, '/', icon, options.ext);
+          }
+      });
+    </script>
 
 </body>
 </html>

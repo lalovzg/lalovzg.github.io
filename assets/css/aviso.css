@@ -7,6 +7,13 @@
 	font-style: normal;
 }
 
+img.emoji {
+   height: 2em;
+   width: 2em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+}
+
 .icon:before {
 	font-family: 'CarrdIcons' !important;
 	speak: none;
@@ -613,6 +620,7 @@ hr:before {
 .shortcutinfs {
 	color: #ffe626;
 	bottom: 76% !important;
+	font-size: 0.7em;
 	position: relative;
 }
 
