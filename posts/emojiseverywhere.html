@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Emojis Everywhere | EduardoVzG</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.min.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<!-- TWEMOJI -->
+		<script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.3"></script>
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../homepage.html" class="logo">EDDVZG</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="../homepage.html">Principal</a></li>
+							<li><a href="../recursos.html">Recursos</a></li>
+							<li><a href="../generic.html">Generic</a></li>
+							<li><a href="../elements.html">Referencias/Tutoriales</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="../twitter.html" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="../facebook.html" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="../instagram.html" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="../medium.html" class="icon fa-medium"><span class="label">Medium</span></a></li>
+							<li><a href="https://github.com/lalovzg/lalovzg.github.io" class="icon fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">Mayo 28, 2017</span>
+									<h1>Usar emojis<br />
+									en tu sitio web</h1>
+									<p>
+										Si eres fan de esos pequeños pero tan prácticos emojis, o simplemente te apetece probar algo diferente a las clásicas reacciones mediante el teclado ( :P :D ) pues aquí te explico cómo activarlos en cualquier página web.
+									</p>
+								</header>
+								<div class="image main"><img src="../images/pic12.jpg" alt="" /></div>
+								<p>
+									La imágen que aprecias sobre este texto es una muestra, cargada sobre un HTML, de los 874 emojis disponibles en una de las herramientas más usadas para trabajar con estos peculiares personajes que hoy en día forman una parte de nuestro diario convivir y socializar.
+								</p>
+								<h2>874 son pocos</h2>
+								<p>
+									Anteriormente dije, <em>una de las herramientas</em>. Lo cierto es que muchas empresas y organizaciones se pusieron manos a la obra en cuanto vieron que estos personajes cobraron gran relevancia y su demanda fue en aumento, por lo que existen variantes de casi todos los <a href="http://unicode.org/emoji/charts/full-emoji-list.html">2623 emojis</a>, aunque incluyendo los novedosos cambios de tono y variantes de género esta herramienta suma un total de <a href="https://github.com/twitter/twemoji#twitter-emoji-twemoji-"><b>2661</b> emojis</a> soportados de manera oficial. 🤩
+								</p>
+								<p>
+									Entre la lista de variantes se encuentras los sets de emojis de <a href="http://emojipedia.org/apple/">Apple</a>, <a href="https://emojipedia.org/google/">Google</a> (aunque para hacer uso de los más recientes emojis se requiere Android O, la aún por estrenarse oficialmente actualización del sistema operativo del gigante G), <a href="http://emojipedia.org/twitter/">Twitter</a>, <a href="http://emojipedia.org/emoji-one/">EmojiOne</a>, <a href="http://emojipedia.org/facebook/">Facebook</a> (que tiene a la vez variantes para su Messenger diferentes de los de la página principal), <a href="http://emojipedia.org/samsung/">Samsung</a>, <a href="https://emojipedia.org/microsoft/">Microsoft</a>, entre algunos más usados específicamente en aplicaciones de correo electrónico pero que usan versiones más antiguas de los que conocemos hoy en día.
+								</p>
+								<p>
+									Además de la gran lista de emojis que se pueden usar en cada set, algunos incluso te permiten seleccionar variantes de <strong>tono</strong> de un mismo emoji. Puedes, por ejemplo, decirle a tu amigo: <br />
+									<code>"No me lo vas a creer, estaba feliz en la playa 🏊🏼, pero olvidé ponerme bloqueador solar y 👩🏿 😱"</code> <br />
+									Así como sus respectivas variantes de <strong>género</strong>: <br />
+									<code>"Tuve que ir con el doctor 👨🏽‍⚕️ y me mandó con una dermatóloga muy amable 👩🏼‍⚕️"</code>
+								</p>
+								<p>
+									Como puedes ver las opciones son muchas; un mismo emoji puede representarse en el género opuesto, y en ambos géneros el mismo emoji puede representarse usando diferentes tonos. Eso sí, como son variantes que representan personas, sólo está permitido usarlos para emojis de personas o en su defecto partes de personas como el brofist (👊🏻 👊🏽 👊🏿). La herramienta que se usa en este sitio web no es otra sino <strong><a href="https://twitter.github.io/twemoji/"><span class="twemoji">Twem❤ji</span></a></strong>, el set de emojis de <b>Twitter</b> que hizo open source el 6 de noviembre del 2014.
+								</p>
+								<h2>Pequeña introducción la tuya</h2>
+								<p>
+									Ya se, ya se. Si ya estás convencido de querer usarlos, a continuación tienes los pasos y algunos detalles para implementar la herramienta que aquí se usa y que recomiendo, o si prefieres la versión super corta está <a href="#pasos-short">aquí</a> ⬅.
+								</p>
+								<dl>
+									<dt>Paso 1.- Decidir si lo implementarás de manera manual o automática</dt>
+									<dd>
+										<p>
+											Quizá suene absurdo o quizá no tenga sentido para ti esto pero ciertamente existen personas que prefieren tomar el código y pasarlo a un archivo local para ser usado mediante un <code>src=""</code>. La ventaja es que pueden revisar cada parte del código y, si consideran necesario, hacer sus propias adaptaciones, cambios o mejoras. La desventaja es que tienen que estar siempre al pendiente de nuevas versiones o tienen que desarrollarlas ellos mismos, de otra forma usarán versiones que quizá se queden antiguas y no se darían cuenta. <br />
+											Si eres de ellos tendrás que abrir el <strong><a href="https://twemoji.maxcdn.com/2/twemoji.min.js?2.3" target="_blank">archivo con el código <i class="icon fa-external-link"></i></a></strong>, seleccionarlo todo (Ctrl + A, CMD + A), copiarlo y pegarlo en un archivo en tu editor de código de tu elección. <br />
+											A continuación deberás guardar ese archivo en un lugar accesible y en tu HTML tendrás que hacer el enlace a tu archivo ".js": <br />
+											<code>&lt;script src="[ruta local de la ubicación del archivo]/[nombre de tu archivo].js"&gt;&lt;/script&gt;</code> <br />
+											Te brincas el paso 2 y continúas con el paso 3 en adelante. <br />
+											O si prefieres usar el <strong>modo automático</strong> ignora lo mencionado en el paso 1 y continua al siguiente paso.
+										</p>
+									</dd>
+									<dt>Paso 2.- Copiar el link del CDN</dt>
+									<dd>
+										<p>
+											Existen CDNs (Content Delivery Network) que facilitan el uso y distribución de contenido a través de la red. La ventaja es que las actualizaciones se registran de manera automática, si el creador del contenido realiza alguna modificación, el contenido se cambia en todos los sitios en donde se haga uso del mismo. La desventaja es que no se permite realizarle modificaciones por parte de terceras personas. <br />
+											El link del CDN que contiene el archivo javascript es: <br />
+											<code>&lt;script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.3.0"&gt;&lt;/script&gt;</code> <br />
+											Coloca esa línea de código en cualquier parte <b>dentro</b> de tu etiqueta <code>&lt;head&gt;</code>. Ahora, a menos que tengas bien diseñada tu página y el servicio de hosting te ofrezca la posibilidad de SSL y HTTPS, y entiendas por qué el link empieza con "//twemoji.maxcdn.com", te sugiero que hagas lo que yo y completes el link con "https:" para terminar con <br />
+											<code>&lt;script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.3.0"&gt;&lt;/script&gt;</code>
+										</p>
+									</dd>
+									<dt>Paso 3.- Asegurarse que se muestren correctamente</dt>
+									<dd>
+										<p>
+											Según los tips en el github de twemoji para que funcione correctamente el código, debes asegurarte que el set de caracteres que usa tu HTML sea UTF-8. Esto se logra añadiendo o modificando una etiqueta <code>&lt;meta&gt;</code> con el set unicode: <br />
+											<code>&lt;meta charset="utf-8"&gt;</code> <br />
+											De nuevo, esta etiqueta debe ir <b>dentro</b> de tu etiqueta <code>&lt;head&gt;</code>
+										</p>
+										<p>
+											Otra cosa importante es que le indiques explícitamente a tu HTML que cada parte de unicode que representa un emoji, sea convertido mediante el javascript a una imágen en formato svg que contiene la forma que conocemos y podemos interpretar (en lugar de, digamos, ver "\\U6259\\EMOJI166" veríamos 🐷). Esto se logra añadiendo: <br />
+											<code class="codigo1">&lt;script type="text/javascript"&gt;
+	twemoji.parse(document.body);
+&lt;/script&gt;</code><br />
+											En cualquier parte <b>dentro</b> de tu etiqueta <code>&lt;body&gt;</code> <br />
+											Ahora que si quieres y lo prefieres puedes evitar que ciertos caracteres se conviertan, más que nada para evitar el cambio de diseño y de <b>tamaño</b> como lo son el &copy; o el &trade;. Esto se consigue cambiando un poco el código y dejarlo así: <br />
+											<code class="codigo1">&lt;script type="text/javascript"&gt;
+	twemoji.parse(document.body, {
+	    callback: function(icon, options, variant) {
+	        switch ( icon ) {
+	            case 'a9':      // © copyright
+	            case 'ae':      // ® registered trademark
+	            case '2122':    // ™ trademark
+	                return false;
+	        }
+	        return ''.concat(options.base, options.size, '/', icon, options.ext);
+	    }
+	});
+&lt;/script&gt;</code>
+										</p>
+									</dd>
+									<dt>
+										Paso 4.- Visitar un sitio de referencia
+									</dt>
+									<dd>
+										<p>
+											A menos que de antemano te hayas memorizado todos los códigos o tengas dónde obtener los unicodes, lo mejor sería que visitaras la página de muestra de los 2661 emojis de Twemoji para tomar el que pienses usar. <br />
+											Sólo visita <a href="https://twitter.github.io/twemoji/2/test/preview.html">https://twitter.github.io/twemoji/2/test/preview.html</a> para la vista previa de los emojis de la versión 2 de Twemoji que incluye los nuevos sets de la versión Unicode 10 donde se añadieron emojis para formar la más reciente versión de Emoji 5.0 <br />
+											Tan sólo visita ese enlace, selecciona uno de los emojis, y copialo. Lo pegas en donde quieras en tu HTML <b>dentro</b> de tu etiqueta <code>&lt;body&gt;</code>, no importa que salga sólo un rectángulo, una vez procesado el archivo tu ícono se transforma automáticamente. Siempre y cuando tengas acceso al archivo javascript, lo que casi siempre significa que tengas conexión a internet para acceder al link del CDN.
+										</p>
+									</dd>
+								</dl>
+								<p>
+									Eso sería todo. Ya deberías estar disfrutando de los emojis tanto los clásicos 😉, como los nuevos 🤙 🦋 🥂. Espero que te haya ayudado pero si tienes más dudas o sugerencias no te detengas y házmelo saber en mis redes sociales. El conocimiento no debe limitarse, sino expandirse 🧠.
+								</p>
+								<h2 id="pasos-short">Pasos versión 'al grano':</h2>
+								<p>
+									1.- Copia y pega <strong>en tu</strong><code>&lt;head&gt;</code><strong>tag</strong>: <br />
+									<code>https://twemoji.maxcdn.com/2/twemoji.min.js?2.3</code> <br />
+									2.- Copia y pega <strong>en tu</strong><code>&lt;body&gt;</code><strong>tag</strong>: <br />
+									<code class="codigo1">&lt;script type="text/javascript"&gt;
+  twemoji.parse(document.body);
+&lt;/script&gt;</code>
+									3.- Copia y pega <strong>en tu</strong><code>&lt;body&gt;</code><strong>tag</strong> cualquier emoji (solo lo seleccionas, la página tiene un poco de código para que te salga un cuadro donde puedas copiar el emoji) de: <br />
+									<code>https://twitter.github.io/twemoji/2/test/preview.html</code> <br />
+									4.- Listo. Me das las gracias después.
+								</p>
+								<p>
+									No olvides visitar la sección <a href="https://github.com/twitter/twemoji#tips">Tips</a> de la fuente de Twemoji. Siempre es bueno revisarla para entender por qué algunas cosas pueden salir mal. Como el &copy; convertido a emoji teniendo un tamaño enorme. En fin. <br />
+									Espero que te haya ayudado pero si tienes más dudas o sugerencias no te detengas y házmelo saber en mis redes sociales. El conocimiento no debe limitarse, sino expandirse 🧠.
+								</p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="3"></textarea>
+								</div>
+								<ul class="actions">
+									<!-- <li><input type="submit" value="Send Message" /></li> -->
+									<li><span class="button disabled">Enviar</span></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="../twitter.html" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="../facebook.html" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="../instagram.html" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="../medium.html" class="icon fa-medium"><span class="label">Medium</span></a></li>
+									<li><a href="https://github.com/lalovzg/lalovzg.github.io" class="icon fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+      <script type="text/javascript">
+				twemoji.parse(document.body, {
+				    callback: function(icon, options, variant) {
+				        switch ( icon ) {
+				            case 'a9':      // © copyright
+				            case 'ae':      // ® registered trademark
+				            case '2122':    // ™ trademark
+				                return false;
+				        }
+				        return ''.concat(options.base, options.size, '/', icon, options.ext);
+				    }
+				});
+			</script>
+
+	</body>
+</html>

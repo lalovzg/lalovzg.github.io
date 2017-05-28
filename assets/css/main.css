@@ -2450,7 +2450,7 @@ header.major > :last-child {
 
 header.major > p {
   margin-top: 0;
-  text-align: center;
+  text-align: justify;
 }
 
 header.major > .date {
@@ -3090,9 +3090,6 @@ body.is-loading #intro:not(.hidden) + #header + #nav {
   #intro {
     padding: 4rem 4rem 2rem 4rem ;
     min-height: 90vh;
-  }
-  #intro p br {
-    display: none;
   }
   #intro + #header {
     margin-top: -14rem;
