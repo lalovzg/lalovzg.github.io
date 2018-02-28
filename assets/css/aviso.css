@@ -337,7 +337,7 @@ html {
 
 #main > .inner {
 	overflow-x: hidden;
-	width: 28rem;
+	width: 35rem;
 	max-width: 100%;
 	padding: 3.4375rem 2.75rem;
 }
@@ -416,7 +416,7 @@ h1 br + br, p br + br {
 
 #text01 {
 	color: #FFFFFF;
-	font-family: 'Montserrat';
+	font-family: 'Cinzel', serif;
 	font-size: 2.75em;
 	line-height: 1.125;
 	font-weight: 400;
@@ -428,10 +428,8 @@ h1 br + br, p br + br {
 
 #text02 {
 	color: #FFFFFF;
-	font-family: 'Source Sans Pro';
-	font-size: 1em;
+	font-family: 'Glegoo', serif;
 	line-height: 1.625;
-	font-weight: 300;
 	background: rgba( 255, 255, 255, 0.3 );
 	border-radius: 5px;
 	padding: 12px;
@@ -509,7 +507,7 @@ hr:before {
 	padding: 0 1.5rem;
 	text-transform: uppercase;
 	font-size: 1em;
-	font-family: 'Montserrat';
+	font-family: 'Arbutus Slab';
 	font-weight: 400;
 	border-radius: 1.5rem;
 }
@@ -521,6 +519,8 @@ hr:before {
 
 #buttons01 .n01:hover {
 	background-color: rgba(99,212,59,0.788);
+	color: #ffd700;
+	font-weight: bold;
 }
 
 #buttons01 .n02 {
@@ -530,6 +530,16 @@ hr:before {
 
 #buttons01 .n02:hover {
 	background-color: rgba(99,212,59,0.788);
+	color: #ffd700;
+	font-weight: bold;
+}
+
+#text01 img.emoji {
+	margin-bottom: -10pt;
+}
+
+#text02 img.emoji, #credits img.emoji {
+	margin-bottom: -5pt;
 }
 
 .icons {
@@ -579,6 +589,7 @@ hr:before {
 
 #icons01 .n01:hover {
 	background-color: rgba(255,255,255,0.141);
+	color: #00aced;
 }
 
 #icons01 .n02 {
@@ -587,7 +598,8 @@ hr:before {
 }
 
 #icons01 .n02:hover {
-	background-color: rgba(255,255,255,0.141);
+	background-color: rgba(59,89,152,0.441);
+	color: #FFFFFF;
 }
 
 #icons01 .n03 {
@@ -596,7 +608,9 @@ hr:before {
 }
 
 #icons01 .n03:hover {
-	background-color: rgba(255,255,255,0.141);
+	background: radial-gradient(circle at 30% 107%, #fdf49770 0%, #fdf49791 5%, #fd594985 45%,#d6249f7d 60%,#285aeba3 90%);
+	box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+	color: #FFFFFF;
 }
 
 #icons01 .n04 {
@@ -606,6 +620,7 @@ hr:before {
 
 #icons01 .n04:hover {
 	background-color: rgba(255,255,255,0.141);
+	color: #12d019de;
 }
 
 #icons01 .n05 {
@@ -615,6 +630,7 @@ hr:before {
 
 #icons01 .n05:hover {
 	background-color: rgba(255,255,255,0.141);
+	color: #fffc00;
 }
 
 .shortcutinfs {
