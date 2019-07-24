@@ -1,0 +1,1 @@
+AuthUserFile lalovzg.github.io/.htpasswd AuthName "lalovzg.github.io/cuentas/24b5d3a609a0e2c1751f90bf99bdf8613f2d8208/index.html" AuthType Basic  require valid-user
